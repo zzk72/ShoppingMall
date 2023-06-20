@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ShoppingClient</class>
+ <widget class="QWidget" name="ShoppingClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>970</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>zzk商城</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(157, 157, 165);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QStackedWidget" name="PageStack">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="HomePage" name="HomeP"/>
+     <widget class="ShopPage" name="ShopP"/>
+     <widget class="CartPage" name="CartP"/>
+     <widget class="OrderPage" name="OrderP"/>
+     <widget class="ChatPage" name="ChatP"/>
+    </widget>
+   </item>
+   <item>
+    <widget class="SlideNavigation" name="BottomNav" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SlideNavigation</class>
+   <extends>QWidget</extends>
+   <header location="global">slidenavigation.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ChatPage</class>
+   <extends>QWidget</extends>
+   <header location="global">chatpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>OrderPage</class>
+   <extends>QWidget</extends>
+   <header location="global">./Order/orderpage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>HomePage</class>
+   <extends>QWidget</extends>
+   <header location="global">./Home/homepage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ShopPage</class>
+   <extends>QWidget</extends>
+   <header location="global">./Store/shoppage.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CartPage</class>
+   <extends>QWidget</extends>
+   <header location="global">./ShoppingCart/cartpage.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
